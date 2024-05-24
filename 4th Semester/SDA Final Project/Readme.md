@@ -1,154 +1,158 @@
-# Software Design and Architecture
+# Weather Forecasting System
 
-## Final project 4th Semester
+## Overview
 
-## 1. Weather Forcasting Class Diagram
+This project involves designing a Weather Forecasting System. The system allows users to view weather forecasts, receive alerts, provide feedback, and more. The system also includes functionalities for administrators to manage data and update weather information.
+
+## Class Diagram
 
 ![Class Diagram](Images/class.jpeg)
 
-**Class Diagram** for a **Weather Forecasting System**. It's a visual representation of the system's functionalities and how different `Classes` interact with these functionalities. Here's a detailed explanation:
+The **Class Diagram** for the Weather Forecasting System illustrates the structure and relationships between different classes in the system. Below is a detailed explanation of each class and its attributes and methods.
+
+### Classes and Their Details
 
 1. **Admin Class**:
 
    - **Attributes**:
-     - `Name: String` - The name of the admin.
-     - `Address: String` - The physical address of the admin.
-     - `Contact_number: long integer` - The contact number for the admin.
+     - `Name: String`
+     - `Address: String`
+     - `Contact_number: long integer`
    - **Methods**:
-     - `Login()` - Allows the admin to log in to the system.
-     - `getWeatherForecast()` - Retrieves the latest weather forecast.
-     - `getFeedbacks()` - Collects feedback from users.
-     - `uploadWeatherData()` - Uploads new weather data to the system.
-     - `verifyImage()` - Checks the authenticity or quality of an image.
-     - `deleteAccounts()` - Removes user accounts from the system.
+     - `Login()`
+     - `getWeatherForecast()`
+     - `getFeedbacks()`
+     - `uploadWeatherData()`
+     - `verifyImage()`
+     - `deleteAccounts()`
 
 2. **Member Class**:
 
    - **Attributes**:
-     - `Name: String` - The name of the member.
-     - `Address: String` - The physical address of the member.
-     - `Email: String` - The email address of the member.
-     - `Password: String` - The password for the member's account.
+     - `Name: String`
+     - `Address: String`
+     - `Email: String`
+     - `Password: String`
    - **Methods**:
-     - `Login()` - Allows the member to log in to the system.
-     - `getWeatherForecast()` - Retrieves the latest weather forecast for the member.
-     - `getWarningAlerts()` - Receives warning alerts related to weather conditions.
+     - `Login()`
+     - `getWeatherForecast()`
+     - `getWarningAlerts()`
 
 3. **Guest Class**:
 
    - **Attributes**:
-     - `Guestid: Integer` - A unique identifier for the guest.
+     - `Guestid: Integer`
    - **Methods**:
-     - `Register()` - Allows a new guest to register in the system.
-     - `GetWeatherForecast()` - Provides weather forecasts to the guest.
-     - `GiveFeedbacks()` - Enables the guest to provide feedback on the service.
+     - `Register()`
+     - `GetWeatherForecast()`
+     - `GiveFeedbacks()`
 
 4. **Feedback Class**:
 
    - **Attributes**:
-     - `Description: String` - A description of the feedback.
-     - `FeedbackStars: Integer` - A star rating associated with the feedback.
+     - `Description: String`
+     - `FeedbackStars: Integer`
    - **Methods**:
-     - `ReturnFeedback()` - Returns the feedback received.
-     - `CountPositiveFeedback()` - Counts the number of positive feedback entries.
-     - `CountNegativeFeedback()` - Counts the number of negative feedback entries.
-     - `CalculateFeedbackRate()` - Calculates the overall feedback rate based on entries.
+     - `ReturnFeedback()`
+     - `CountPositiveFeedback()`
+     - `CountNegativeFeedback()`
+     - `CalculateFeedbackRate()`
 
 5. **Images Class**:
 
    - **Attributes**:
-     - `Title: String` - The title of the image.
-     - `ImageLocation: String` - The storage location of the image.
+     - `Title: String`
+     - `ImageLocation: String`
    - **Methods**:
-     - `UploadImages()` - Allows uploading of images to the system.
+     - `UploadImages()`
 
 6. **Verified Image Object**:
 
    - **Attributes**:
-     - `ImageID: Integer` - A unique identifier for the verified image.
+     - `ImageID: Integer`
    - **Methods**:
-     - `CheckPhotoQuality()` - Assesses the quality of the photo.
+     - `CheckPhotoQuality()`
 
 7. **Non-Verified Image Object**:
 
    - **Methods**:
-     - `ReturnImages()` - Return Unverified photo.
+     - `ReturnImages()`
 
 8. **Weather Updates Class**:
 
    - **Attributes**:
-     - `City: String` - The city for which the weather update is applicable.
-     - `ZIP: Integer` - The ZIP code of the city.
-     - `Date: Date` - The date of the weather update.
+     - `City: String`
+     - `ZIP: Integer`
+     - `Date: Date`
    - **Methods**:
-     - `ReturnWeatherUpdates()` - Provides the latest weather updates.
+     - `ReturnWeatherUpdates()`
 
 9. **Weather Forecast Class**:
 
    - **Attributes**:
-     - `Region: String` - The region for which the forecast is provided.
-     - `ZIP: Integer` - The ZIP code of the region.
-     - `City: String` - The city within the region.
+     - `Region: String`
+     - `ZIP: Integer`
+     - `City: String`
    - **Methods**:
-     - `returnForecast()` - Returns the weather forecast for the specified region.
-     - `CreateGraphs()` - Generates graphical representations of the weather forecast.
+     - `returnForecast()`
+     - `CreateGraphs()`
 
 10. **Warning Alerts Class**:
 
     - **Attributes**:
-      - `Description: String` - A description of the warning alert.
+      - `Description: String`
     - **Methods**:
-      - `ReturnWarningAlerts()` - Provides warning alerts.
-      - `LocateThePlace()` - Identifies the location related to the warning alert.
+      - `ReturnWarningAlerts()`
+      - `LocateThePlace()`
 
 11. **Weather Station Class**:
     - **Attributes**:
-      - `City: String` - The city where the weather station is located.
-      - `ZIP: Integer` - The ZIP code of the city.
+      - `City: String`
+      - `ZIP: Integer`
     - **Methods**:
-      - `ReturnWeatherData()` - Returns data collected by the weather station.
-      - `ConnectAllStations()` - Connects all weather stations in the network.
-      - `ViewTheMap()` - Displays a map of all weather stations.
+      - `ReturnWeatherData()`
+      - `ConnectAllStations()`
+      - `ViewTheMap()`
 
-### Here is the Editable Diagram:
+### Editable Diagram
 
+To view and edit the class diagram, use the following link:
 [Class Diagram Editable Link](https://app.creately.com/d/EPYD56GY3TV/edit)
 
-## 2. Weather Forcasting UseCase Diagram
+## Use Case Diagram
 
-![Usecase Diagram](Images/Weather%20Forcasting%20Usecase.png)
+![Use Case Diagram](Images/Weather%20Forcasting%20Usecase.png)
 
-**Use Case Diagram** for a **Weather Forecasting System**. It's a visual representation of the system's functionalities and how different `users` interact with these functionalities. Here's a detailed explanation:
+The **Use Case Diagram** for the Weather Forecasting System shows the different actions that users (actors) can perform within the system.
 
-### Actors and Their Use Cases:
+### Actors and Their Use Cases
 
 - **User**: A registered member who can:
 
-  - **Receive Proactive Notification**: Get alerts without requesting them actively.
-  - **Provide Feedback**: Send comments or reports about the system.
-  - **Set Preferences for Alerts**: Customize alert settings according to personal preferences.
-  - **Search by Location**: Look up weather forecasts for specific places.
-  - **View Weather Forecast**: See the weather predictions provided by the system.
+  - Receive Proactive Notification
+  - Provide Feedback
+  - Set Preferences for Alerts
+  - Search by Location
+  - View Weather Forecast
 
-- **Guest**: A non-registered user with limited access, who can only:
+- **Guest**: A non-registered user who can:
 
-  - **View Weather Forecast**: Check the weather predictions without the need to log in.
+  - View Weather Forecast
 
 - **System Administrator**: A user with administrative privileges who can:
 
-  - **Configure App Settings**: Adjust the system's operational settings.
-  - **Admin Dashboard Access**: Use the dashboard for monitoring and managing the system.
-  - **Manage User Data** (excluded use case): Handle users' personal data, likely a restricted action not performed under normal circumstances.
+  - Configure App Settings
+  - Access Admin Dashboard
+  - Manage User Data (excluded use case)
 
-- **Weather Data Provider**: An external entity or service that:
-  - **Provide Weather Data**: Supplies the weather data that the system uses to generate forecasts.
+- **Weather Data Provider**: An external entity that provides weather data for the system.
 
-### Relationships:
+### Relationships
 
-- **"includes" Relationship**: The **Data Analysis** use case includes **Weather Data Update**, meaning updating the weather data is a part of the data analysis process.
-- **"excludes" Relationship**: The **Manage User Data** use case is excluded from the regular tasks of the System Administrator, indicating it's an exceptional action.
+- **"includes" Relationship**: The **Data Analysis** use case includes **Weather Data Update**.
+- **"excludes" Relationship**: The **Manage User Data** use case is excluded from the System Administrator's regular tasks.
 
-### Here is the diagram plantuml syntax:
+### Diagram PlantUML Syntax
 
 ```plantuml
 @startuml
@@ -212,4 +216,6 @@ rectangle "Weather Forecasting System" {
 @enduml
 ```
 
-[Usecase Diagram Editable Link](https://online.visual-paradigm.com/app/diagrams/#diagram:proj=0&external=https://cdn-us-04.visual-paradigm.com/node/on/w/orwsgyxc/rest/diagrams/shares/diagram/52fb458a-889d-45aa-baca-e16e880b1719/content&name=Use%20case%20diagram%20for%20weather)
+## Conclusion
+
+This document outlines the class and use case diagrams for the Weather Forecasting System. These diagrams provide a structured view of the system's architecture, demonstrating the relationships and interactions between different components and users. The provided editable links allow for further refinement and customization of the diagrams as needed.
