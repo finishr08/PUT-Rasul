@@ -4,6 +4,57 @@
 
 This document provides a comprehensive guide to basic MySQL concepts and query examples. It covers the creation, manipulation, and retrieval of data in a MySQL database, making it a valuable resource for beginners and professionals alike.
 
+## Table of Contents
+
+## Table of Contents
+
+1. &#9776; [Overview](#overview)
+2. &#9776; [MySQL Database Concepts](#mysql-database-concepts)
+   - 2.1 [MySQL Database](#1-mysql-database)
+   - 2.2 [MySQL Create DB](#2-mysql-create-db)
+   - 2.3 [MySQL Drop DB](#3-mysql-drop-db)
+3. &#9776; [Table Management](#table-management)
+   - 3.1 [MySQL Create Table](#4-mysql-create-table)
+   - 3.2 [MySQL Drop Table](#5-mysql-drop-table)
+   - 3.3 [MySQL Alter Table](#6-mysql-alter-table)
+   - 3.4 [MySQL Constraints](#7-mysql-constraints)
+4. &#9776; [Column Constraints](#column-constraints)
+   - 4.1 [MySQL Not Null](#8-mysql-not-null)
+   - 4.2 [MySQL Unique](#9-mysql-unique)
+   - 4.3 [MySQL Primary Key](#10-mysql-primary-key)
+   - 4.4 [MySQL Foreign Key](#11-mysql-foreign-key)
+   - 4.5 [MySQL Check](#12-mysql-check)
+   - 4.6 [MySQL Default](#13-mysql-default)
+   - 4.7 [MySQL Create Index](#14-mysql-create-index)
+   - 4.8 [MySQL Auto Increment](#15-mysql-auto-increment)
+   - 4.9 [MySQL Dates](#16-mysql-dates)
+   - 4.10 [MySQL Views](#17-mysql-views)
+5. &#9776; [Data Retrieval and Manipulation](#data-retrieval-and-manipulation)
+   - 5.1 [MySQL SQL](#18-mysql-sql)
+   - 5.2 [MySQL SELECT](#19-mysql-select)
+   - 5.3 [MySQL WHERE](#20-mysql-where)
+   - 5.4 [MySQL AND, OR, NOT](#21-mysql-and-or-not)
+   - 5.5 [MySQL ORDER BY](#22-mysql-order-by)
+   - 5.6 [MySQL INSERT INTO](#23-mysql-insert-into)
+   - 5.7 [MySQL NULL Values](#24-mysql-null-values)
+   - 5.8 [MySQL UPDATE](#25-mysql-update)
+   - 5.9 [MySQL DELETE](#26-mysql-delete)
+   - 5.10 [MySQL LIMIT](#27-mysql-limit)
+   - 5.11 [MySQL MIN and MAX](#28-mysql-min-and-max)
+   - 5.12 [MySQL COUNT, AVG, SUM](#29-mysql-count-avg-sum)
+   - 5.13 [MySQL LIKE](#30-mysql-like)
+   - 5.14 [MySQL Wildcards](#31-mysql-wildcards)
+   - 5.15 [MySQL IN](#32-mysql-in)
+   - 5.16 [MySQL BETWEEN](#33-mysql-between)
+   - 5.17 [MySQL Aliases](#34-mysql-aliases)
+6. &#9776; [Joins](#joins)
+   - 6.1 [MySQL Joins](#35-mysql-joins)
+   - 6.2 [MySQL INNER JOIN](#36-mysql-inner-join)
+   - 6.3 [MySQL LEFT JOIN](#37-mysql-left-join)
+   - 6.4 [MySQL RIGHT JOIN](#38-mysql-right-join)
+   - 6.5 [MySQL CROSS JOIN](#39-mysql-cross-join)
+   - 6.6 [MySQL Self Join](#40-mysql-self-join)
+
 ## MySQL Database Concepts
 
 ### 1. MySQL Database
