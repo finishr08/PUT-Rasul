@@ -401,3 +401,94 @@
 
 **Actors**: Student, Instructor, System Admin  
 **Use Cases**: Mark Attendance, Check Attendance, Generate Report, Send Notification, Update Schedule
+
+# Presentation topics
+
+### Sarfraz: Persistent Layer Design
+
+The persistent layer in software architecture refers to the subsystem responsible for storing and retrieving data from a database or other forms of storage. The design of this layer involves several key aspects:
+
+- **Data Models**: Defining the structure of the data, typically using entities and relationships.
+- **Data Access Objects (DAOs)**: Abstracting and encapsulating all access to the data source.
+- **ORM (Object-Relational Mapping)**: Tools like Hibernate or Entity Framework to map objects to database records.
+- **Transaction Management**: Ensuring data integrity and consistency through ACID properties.
+- **Connection Pooling**: Managing database connections efficiently.
+- **Caching**: Improving performance by storing frequently accessed data in memory.
+
+### Mustafa: Web Application Design
+
+Web application design focuses on creating the front-end and back-end components of web-based systems. Key aspects include:
+
+- **User Interface (UI) Design**: Ensuring the web interface is user-friendly and accessible.
+- **Client-Server Architecture**: Structuring the interaction between the client (browser) and the server.
+- **Responsive Design**: Making sure the web application works across different devices and screen sizes.
+- **Single Page Applications (SPAs)**: Using frameworks like Angular, React, or Vue.js for dynamic user experiences.
+- **RESTful APIs**: Designing APIs for communication between the client and server.
+- **Security**: Implementing measures like HTTPS, input validation, and authentication/authorization mechanisms.
+
+### Umer: Architectural Structure and Styles
+
+Architectural structures and styles provide foundational approaches for organizing a system:
+
+- **Layered Architecture**: Dividing the system into layers (e.g., presentation, business logic, data access).
+- **Client-Server**: Separating the system into client and server roles.
+- **Microservices**: Decomposing the application into loosely coupled, independently deployable services.
+- **Event-Driven**: Building systems that respond to events and asynchronous message passing.
+- **Service-Oriented Architecture (SOA)**: Using services as the fundamental building blocks.
+- **Monolithic**: A single unified codebase where all components are interdependent.
+
+### Sanaullah: Architectural and Design Qualities
+
+Architectural and design qualities are attributes that affect the performance and maintainability of the system:
+
+- **Scalability**: The ability to handle increased load by adding resources.
+- **Reliability**: Ensuring the system performs consistently and accurately.
+- **Maintainability**: Ease of making changes to the system.
+- **Performance**: Efficiency in terms of response time and resource usage.
+- **Security**: Protecting the system from unauthorized access and data breaches.
+- **Usability**: How easy it is for users to interact with the system.
+
+### Umair: Architectural Patterns
+
+Architectural patterns are reusable solutions to common problems in software architecture:
+
+- **MVC (Model-View-Controller)**: Separating application logic, UI, and input control.
+- **Repository Pattern**: Abstracting data access logic and business logic.
+- **CQRS (Command Query Responsibility Segregation)**: Separating read and write operations.
+- **Event Sourcing**: Storing the state of the system as a sequence of events.
+- **Broker**: Middleware for coordinating communication between components.
+- **Microkernel**: A core system with plug-in modules for extensibility.
+
+### Usman: Architecture Documentation
+
+Architecture documentation captures the architectural decisions, design, and details:
+
+- **Views and Viewpoints**: Using different perspectives (e.g., logical, physical, development) to describe the architecture.
+- **Diagrams**: Visual representations such as UML, flowcharts, and component diagrams.
+- **Architecture Decision Records (ADRs)**: Documenting the reasons behind key architectural decisions.
+- **Standards and Conventions**: Ensuring consistency and compliance with industry standards.
+- **Technical Specifications**: Detailed descriptions of system components, interfaces, and interactions.
+
+### Shaoib: Architectural Evaluation
+
+Architectural evaluation involves assessing the architecture to ensure it meets requirements:
+
+- **ATAM (Architecture Tradeoff Analysis Method)**: Evaluating trade-offs among various quality attributes.
+- **CBAM (Cost-Benefit Analysis Method)**: Analyzing the costs and benefits of architectural decisions.
+- **Scenario-Based Evaluation**: Using realistic scenarios to test architectural robustness.
+- **Prototyping**: Building prototypes to validate architectural choices.
+- **Metrics and Measurements**: Using quantitative data to evaluate performance, scalability, etc.
+
+### Amir: Software Architecture (Detailed Explanation)
+
+Software architecture is the high-level structure of a software system, encompassing its components, their relationships, and the principles guiding its design and evolution. Key elements include:
+
+- **Components**: Individual units of functionality (e.g., classes, modules, services).
+- **Connectors**: Interactions between components (e.g., data flow, control flow).
+- **Configurations**: Specific arrangements of components and connectors.
+- **Views**: Different perspectives on the architecture (e.g., logical, physical, process).
+- **Architectural Styles**: Common patterns and approaches (e.g., layered, microservices).
+- **Quality Attributes**: Non-functional requirements such as performance, security, and maintainability.
+- **Documentation**: Comprehensive records detailing the architecture, decisions, and rationale.
+- **Tools and Techniques**: Methods for designing, implementing, and evaluating architectures (e.g., UML, ATAM).
+- **Evolution**: Adapting the architecture over time to meet changing requirements and technologies.
