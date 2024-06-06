@@ -1,7 +1,5 @@
 ## Simulation & Modeling
 
-Sure, let's go through these questions one by one in a simple and understandable manner.
-
 ### 1. Sending Rate Calculation
 
 To calculate the sending rate for a VoIP application where packets are sent every 50 milliseconds and each packet is 80 bytes:
