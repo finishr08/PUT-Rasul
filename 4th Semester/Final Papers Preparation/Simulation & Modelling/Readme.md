@@ -139,3 +139,16 @@ Jitter is the variation in time it takes for packets to travel through the netwo
 - **Affects Real-Time Applications**: High jitter can disrupt audio and video in services like VoIP and streaming.
 - **Causes**: Network congestion, poor routing, and variable queue lengths can increase jitter.
 - **Solutions**: Reducing jitter involves managing traffic efficiently, prioritizing real-time data, and keeping queues under control.
+
+### How to Reduce Jitter:
+
+1. **Stable Network**: Maintain consistent bandwidth.
+2. **Short Queues**: Keep data lines short and steady.
+3. **Prevent Congestion**: Avoid traffic jams.
+4. **Priority Traffic**: Give important data first dibs.
+5. **Efficient Routing**: Use the quickest paths.
+6. **Minimize Interference**: Cut down on disruptions.
+7. **Smooth Traffic**: Control data flow to avoid spikes.
+8. **Low Latency**: Choose fast connections.
+9. **Avoid Overloading**: Keep devices from getting overwhelmed.
+10. **Monitor Performance**: Keep an eye on the network's health.
